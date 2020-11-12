@@ -78,12 +78,13 @@ namespace Spritzgussunternehmen
                 MessageBox.Show("Fehler beim löschen des Kunden" + a);
             }
         }
-
+        
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            long Kunde = 0;
             KundenAdd.Text = "Kunden hinzufügen";
             TC.TabPages.Add(KundenAdd);
-            OpenForm(new KundeAdd());
+            OpenForm(new KundeAdd(Kunde));
             TC.SelectedTab = KundenAdd;
         }
         public void OpenForm(Form FormToOpen)
@@ -256,6 +257,26 @@ namespace Spritzgussunternehmen
             
             istActive(adap);
         }
-                
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            
+
+            string Ausgewähltezelle = Kunden.CurrentRow.Cells["Nr"].Value.ToString();
+
+          cmd = new OleDbCommand("select * from Kunde where Nr = " + System.Convert.ToInt64(Ausgewähltezelle) + "", con);
+
+
+            con.Open();
+            dr = cmd.ExecuteReader();
+            dr.Read();
+            long Kunde = dr.GetInt32(0);
+            con.Close();
+
+            KundenAdd.Text = "Kunden Bearbeiten";
+            TC.TabPages.Add(KundenAdd);
+            OpenForm(new KundeAdd(Kunde));
+            TC.SelectedTab = KundenAdd;
+        }
     }
 }

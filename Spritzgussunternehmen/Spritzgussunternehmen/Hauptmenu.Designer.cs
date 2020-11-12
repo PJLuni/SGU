@@ -337,6 +337,7 @@
             // 
             this.main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.main.Location = new System.Drawing.Point(200, 60);
             this.main.Name = "main";
             this.main.Size = new System.Drawing.Size(1064, 815);

@@ -138,6 +138,7 @@
             this.iconButton4.Text = "Kunden bearbeiten";
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton5
             // 
