@@ -17,7 +17,7 @@ namespace Spritzgussunternehmen
     {
         IconButton sidebarAuftrag;
 
-        OleDbConnection con = new OleDbConnection("Provider = Microsoft.ACE.OleDB.12.0; Data Source = Werkstoffpruefsystem.accdb");
+        OleDbConnection con = OleConfig.Connection();
         OleDbCommand cmd = null;
 
         string username = null;
