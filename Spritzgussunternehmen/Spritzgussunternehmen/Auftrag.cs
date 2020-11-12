@@ -24,9 +24,7 @@ namespace Spritzgussunternehmen
 
         private void Auftrag_Load(object sender, EventArgs e)
         {
-            adap = new OleDbDataAdapter("SELECT Auftrag.Nr as Auftrag_Nr, Kunde.Bez as Kunde, Benutzerkonto.Vorname as Sachmitarbeiter,Auftrag.Auslieferungsdatum,Auftragsstatus.Bez as Status " + 
-                                        "FROM Auftrag, Kunde, Benutzerkonto,Auftragsstatus " +  
-                                        "Where Auftrag.Kunde=Kunde.Nr and Auftrag.Sachbearbeiter = Benutzerkonto.Nr and  Auftrag.Status = 1", con);
+            adap = new OleDbDataAdapter("SELECT Auftrag.Nr as Auftrag_Nr, Kunde.Bez as Kunde, Benutzerkonto.Vorname as Sachmitarbeiter,Auftrag.Auslieferungsdatum,Auftragsstatus.Bez as Status FROM Auftrag, Kunde, Benutzerkonto,Auftragsstatus Where Auftrag.Status = Auftragsstatus.Nr and Auftrag.Kunde=Kunde.Nr and Auftrag.Sachbearbeiter = Benutzerkonto.Nr and  Auftrag.Status = 1", con);
 
             ds.Clear();
 

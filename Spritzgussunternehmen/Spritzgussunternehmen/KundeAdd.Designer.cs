@@ -54,26 +54,27 @@
             this.lieferdaten = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label20 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Kunden)).BeginInit();
             this.lieferdaten.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -385,6 +386,17 @@
             this.label9.TabIndex = 73;
             this.label9.Text = "Straße + Hausnummer";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Chocolate;
+            this.label13.Location = new System.Drawing.Point(6, 153);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 18);
+            this.label13.TabIndex = 69;
+            this.label13.Text = "E-Mail";
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -396,6 +408,14 @@
             this.label16.TabIndex = 66;
             this.label16.Text = "Bezeichnung";
             // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(9, 174);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(416, 26);
+            this.textBox13.TabIndex = 12;
+            // 
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -404,6 +424,14 @@
             this.textBox9.Size = new System.Drawing.Size(137, 26);
             this.textBox9.TabIndex = 15;
             this.textBox9.Text = "Deutschland";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(220, 122);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(205, 26);
+            this.textBox14.TabIndex = 11;
             // 
             // label10
             // 
@@ -416,6 +444,17 @@
             this.label10.TabIndex = 72;
             this.label10.Text = "Land";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Chocolate;
+            this.label14.Location = new System.Drawing.Point(217, 101);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(36, 18);
+            this.label14.TabIndex = 68;
+            this.label14.Text = "Fax";
+            // 
             // textBox10
             // 
             this.textBox10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -423,6 +462,17 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(416, 26);
             this.textBox10.TabIndex = 16;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Chocolate;
+            this.label12.Location = new System.Drawing.Point(6, 205);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(39, 18);
+            this.label12.TabIndex = 70;
+            this.label12.Text = "PLZ";
             // 
             // textBox16
             // 
@@ -432,6 +482,14 @@
             this.textBox16.Size = new System.Drawing.Size(324, 26);
             this.textBox16.TabIndex = 9;
             // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(9, 226);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(130, 26);
+            this.textBox12.TabIndex = 13;
+            // 
             // textBox11
             // 
             this.textBox11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -439,6 +497,14 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(137, 26);
             this.textBox11.TabIndex = 14;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(9, 122);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(205, 26);
+            this.textBox15.TabIndex = 10;
             // 
             // label11
             // 
@@ -461,71 +527,6 @@
             this.label15.Size = new System.Drawing.Size(37, 18);
             this.label15.TabIndex = 67;
             this.label15.Text = "Tel.";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(9, 122);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(205, 26);
-            this.textBox15.TabIndex = 10;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(9, 226);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(130, 26);
-            this.textBox12.TabIndex = 13;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Chocolate;
-            this.label12.Location = new System.Drawing.Point(6, 205);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 18);
-            this.label12.TabIndex = 70;
-            this.label12.Text = "PLZ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Chocolate;
-            this.label14.Location = new System.Drawing.Point(217, 101);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(36, 18);
-            this.label14.TabIndex = 68;
-            this.label14.Text = "Fax";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(220, 122);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(205, 26);
-            this.textBox14.TabIndex = 11;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(9, 174);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(416, 26);
-            this.textBox13.TabIndex = 12;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Chocolate;
-            this.label13.Location = new System.Drawing.Point(6, 153);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 18);
-            this.label13.TabIndex = 69;
-            this.label13.Text = "E-Mail";
             // 
             // iconButton2
             // 
@@ -607,12 +608,22 @@
             this.label20.TabIndex = 78;
             this.label20.Text = "Lieferadressen";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(469, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 37);
+            this.button1.TabIndex = 79;
+            this.button1.Text = "Speichern";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // KundeAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1048, 776);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.iconButton6);
             this.Controls.Add(this.iconButton7);
@@ -701,5 +712,6 @@
         private FontAwesome.Sharp.IconButton iconButton7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button1;
     }
 }
