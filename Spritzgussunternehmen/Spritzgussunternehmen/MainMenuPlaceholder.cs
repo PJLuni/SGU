@@ -21,21 +21,17 @@ namespace Spritzgussunternehmen
         }
         private void MainMenuPlaceholder_Load(object sender, EventArgs e)
         {
-            SetClock();
+            string dayshort = DateTime.Now.ToString("dd");
+            string daylong = DateTime.Now.ToString("dddd");
+            string month = DateTime.Now.ToString("MMMM");
+            string year = DateTime.Now.ToString("yyyy");
+
+            label1.Text = DateTime.Now.ToString("HH:mm:ss");
+            label2.Text = $"{daylong}, {dayshort}. {month}, {year}";
+
             label1.Focus();
         }
         private void Uhr_Tick(object sender, EventArgs e)
-        {
-            SetClock();
-        }
-        private void label2_SizeChanged(object sender, EventArgs e)
-        {
-            /*Size NeueDateInfo = label2.Size;
-            NeueDateInfo -= StandardDateInfo;*/
-            label2.Location -= Test;
-        }
-
-        private void SetClock()
         {
             string dayshort = DateTime.Now.ToString("dd");
             string daylong = DateTime.Now.ToString("dddd");
@@ -44,6 +40,12 @@ namespace Spritzgussunternehmen
 
             label1.Text = DateTime.Now.ToString("HH:mm:ss");
             label2.Text = $"{daylong}, {dayshort}. {month}, {year}";
+        }
+        private void label2_SizeChanged(object sender, EventArgs e)
+        {
+            /*Size NeueDateInfo = label2.Size;
+            NeueDateInfo -= StandardDateInfo;*/
+            label2.Location -= Test;
         }
     }
 }

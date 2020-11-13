@@ -17,8 +17,7 @@ namespace Spritzgussunternehmen
     {
         IconButton sidebarAuftrag;
 
-        OleDbConnection con = OleConfig.Connection();
-        OleDbCommand cmd = null;
+        OleConfig myConfig = new OleConfig();
 
         string username = null;
         string usernr = null;
@@ -76,12 +75,12 @@ namespace Spritzgussunternehmen
         {
             string hashedpasswort = HashPassword(passwort.Text, new SHA256CryptoServiceProvider());
 
-            con.Open();
+            myConfig.ConOpen();
 
-            cmd = new OleDbCommand($"SELECT count(*) FROM Benutzerkonto WHERE Benutzername = '{benutzername.Text}' AND Passwort = '{hashedpasswort}'", con);
-            int userexists = Convert.ToInt16(cmd.ExecuteScalar());
+            myConfig.NewCmd($"SELECT count(*) FROM Benutzerkonto WHERE Benutzername = '{benutzername.Text}' AND Passwort = '{hashedpasswort}'");
+            int userexists = myConfig.ExeCmd();
 
-            con.Close();
+            myConfig.ConClose();
 
             if (userexists > 0)
             {
