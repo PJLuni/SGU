@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hauptmenu));
             this.sidebar = new System.Windows.Forms.Panel();
             this.sidebarStatus = new FontAwesome.Sharp.IconButton();
@@ -45,9 +46,12 @@
             this.topbarClose = new FontAwesome.Sharp.IconButton();
             this.topbarSettings = new FontAwesome.Sharp.IconButton();
             this.main = new System.Windows.Forms.Panel();
+            this.ErrorPanel = new System.Windows.Forms.Panel();
+            this.Error = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.topbar.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.main.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -63,7 +67,7 @@
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(200, 875);
+            this.sidebar.Size = new System.Drawing.Size(200, 775);
             this.sidebar.TabIndex = 0;
             // 
             // sidebarStatus
@@ -72,15 +76,18 @@
             this.sidebarStatus.Enabled = false;
             this.sidebarStatus.FlatAppearance.BorderSize = 0;
             this.sidebarStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarStatus.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.sidebarStatus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebarStatus.ForeColor = System.Drawing.Color.White;
             this.sidebarStatus.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.sidebarStatus.IconColor = System.Drawing.Color.Chocolate;
             this.sidebarStatus.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.sidebarStatus.IconSize = 48;
             this.sidebarStatus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarStatus.Location = new System.Drawing.Point(0, 420);
             this.sidebarStatus.Name = "sidebarStatus";
             this.sidebarStatus.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.sidebarStatus.Rotation = 0D;
             this.sidebarStatus.Size = new System.Drawing.Size(200, 60);
             this.sidebarStatus.TabIndex = 5;
             this.sidebarStatus.TabStop = false;
@@ -96,15 +103,18 @@
             this.sidebarStammdaten.Enabled = false;
             this.sidebarStammdaten.FlatAppearance.BorderSize = 0;
             this.sidebarStammdaten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarStammdaten.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.sidebarStammdaten.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebarStammdaten.ForeColor = System.Drawing.Color.White;
             this.sidebarStammdaten.IconChar = FontAwesome.Sharp.IconChar.Database;
             this.sidebarStammdaten.IconColor = System.Drawing.Color.Chocolate;
             this.sidebarStammdaten.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.sidebarStammdaten.IconSize = 48;
             this.sidebarStammdaten.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarStammdaten.Location = new System.Drawing.Point(0, 360);
             this.sidebarStammdaten.Name = "sidebarStammdaten";
             this.sidebarStammdaten.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.sidebarStammdaten.Rotation = 0D;
             this.sidebarStammdaten.Size = new System.Drawing.Size(200, 60);
             this.sidebarStammdaten.TabIndex = 4;
             this.sidebarStammdaten.TabStop = false;
@@ -120,15 +130,18 @@
             this.sidebarRechnung.Enabled = false;
             this.sidebarRechnung.FlatAppearance.BorderSize = 0;
             this.sidebarRechnung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarRechnung.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.sidebarRechnung.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebarRechnung.ForeColor = System.Drawing.Color.White;
             this.sidebarRechnung.IconChar = FontAwesome.Sharp.IconChar.Receipt;
             this.sidebarRechnung.IconColor = System.Drawing.Color.Chocolate;
             this.sidebarRechnung.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.sidebarRechnung.IconSize = 48;
             this.sidebarRechnung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarRechnung.Location = new System.Drawing.Point(0, 300);
             this.sidebarRechnung.Name = "sidebarRechnung";
             this.sidebarRechnung.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.sidebarRechnung.Rotation = 0D;
             this.sidebarRechnung.Size = new System.Drawing.Size(200, 60);
             this.sidebarRechnung.TabIndex = 3;
             this.sidebarRechnung.TabStop = false;
@@ -144,15 +157,18 @@
             this.sidebarLieferung.Enabled = false;
             this.sidebarLieferung.FlatAppearance.BorderSize = 0;
             this.sidebarLieferung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarLieferung.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.sidebarLieferung.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebarLieferung.ForeColor = System.Drawing.Color.White;
             this.sidebarLieferung.IconChar = FontAwesome.Sharp.IconChar.Truck;
             this.sidebarLieferung.IconColor = System.Drawing.Color.Chocolate;
             this.sidebarLieferung.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.sidebarLieferung.IconSize = 48;
             this.sidebarLieferung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarLieferung.Location = new System.Drawing.Point(0, 240);
             this.sidebarLieferung.Name = "sidebarLieferung";
             this.sidebarLieferung.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.sidebarLieferung.Rotation = 0D;
             this.sidebarLieferung.Size = new System.Drawing.Size(200, 60);
             this.sidebarLieferung.TabIndex = 2;
             this.sidebarLieferung.TabStop = false;
@@ -168,18 +184,20 @@
             this.sidebarAuftrag.Enabled = false;
             this.sidebarAuftrag.FlatAppearance.BorderSize = 0;
             this.sidebarAuftrag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarAuftrag.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.sidebarAuftrag.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebarAuftrag.ForeColor = System.Drawing.Color.White;
             this.sidebarAuftrag.IconChar = FontAwesome.Sharp.IconChar.Tasks;
             this.sidebarAuftrag.IconColor = System.Drawing.Color.Chocolate;
             this.sidebarAuftrag.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.sidebarAuftrag.IconSize = 48;
             this.sidebarAuftrag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarAuftrag.Location = new System.Drawing.Point(0, 180);
             this.sidebarAuftrag.Name = "sidebarAuftrag";
             this.sidebarAuftrag.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.sidebarAuftrag.Rotation = 0D;
             this.sidebarAuftrag.Size = new System.Drawing.Size(200, 60);
             this.sidebarAuftrag.TabIndex = 1;
-            this.sidebarAuftrag.TabStop = false;
             this.sidebarAuftrag.Text = "Auftrag";
             this.sidebarAuftrag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarAuftrag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -193,15 +211,18 @@
             this.sidebarLogin.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebarLogin.FlatAppearance.BorderSize = 0;
             this.sidebarLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sidebarLogin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.sidebarLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebarLogin.ForeColor = System.Drawing.Color.White;
             this.sidebarLogin.IconChar = FontAwesome.Sharp.IconChar.SignInAlt;
             this.sidebarLogin.IconColor = System.Drawing.Color.Chocolate;
             this.sidebarLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.sidebarLogin.IconSize = 48;
             this.sidebarLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sidebarLogin.Location = new System.Drawing.Point(0, 120);
             this.sidebarLogin.Name = "sidebarLogin";
             this.sidebarLogin.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.sidebarLogin.Rotation = 0D;
             this.sidebarLogin.Size = new System.Drawing.Size(200, 60);
             this.sidebarLogin.TabIndex = 0;
             this.sidebarLogin.TabStop = false;
@@ -276,14 +297,17 @@
             this.topbarLogout.Enabled = false;
             this.topbarLogout.FlatAppearance.BorderSize = 0;
             this.topbarLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topbarLogout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.topbarLogout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topbarLogout.ForeColor = System.Drawing.Color.White;
             this.topbarLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.topbarLogout.IconColor = System.Drawing.Color.Chocolate;
             this.topbarLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.topbarLogout.IconSize = 48;
             this.topbarLogout.Location = new System.Drawing.Point(61, 0);
             this.topbarLogout.Name = "topbarLogout";
             this.topbarLogout.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
+            this.topbarLogout.Rotation = 0D;
             this.topbarLogout.Size = new System.Drawing.Size(56, 60);
             this.topbarLogout.TabIndex = 6;
             this.topbarLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -297,14 +321,17 @@
             this.topbarClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.topbarClose.FlatAppearance.BorderSize = 0;
             this.topbarClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topbarClose.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.topbarClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topbarClose.ForeColor = System.Drawing.Color.White;
             this.topbarClose.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.topbarClose.IconColor = System.Drawing.Color.Chocolate;
             this.topbarClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.topbarClose.IconSize = 48;
             this.topbarClose.Location = new System.Drawing.Point(117, 0);
             this.topbarClose.Name = "topbarClose";
             this.topbarClose.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
+            this.topbarClose.Rotation = 0D;
             this.topbarClose.Size = new System.Drawing.Size(56, 60);
             this.topbarClose.TabIndex = 5;
             this.topbarClose.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -318,14 +345,17 @@
             this.topbarSettings.Enabled = false;
             this.topbarSettings.FlatAppearance.BorderSize = 0;
             this.topbarSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topbarSettings.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.topbarSettings.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topbarSettings.ForeColor = System.Drawing.Color.White;
             this.topbarSettings.IconChar = FontAwesome.Sharp.IconChar.UserCog;
             this.topbarSettings.IconColor = System.Drawing.Color.Chocolate;
             this.topbarSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.topbarSettings.IconSize = 48;
             this.topbarSettings.Location = new System.Drawing.Point(0, 0);
             this.topbarSettings.Name = "topbarSettings";
             this.topbarSettings.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
+            this.topbarSettings.Rotation = 0D;
             this.topbarSettings.Size = new System.Drawing.Size(56, 60);
             this.topbarSettings.TabIndex = 4;
             this.topbarSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -336,19 +366,33 @@
             // main
             // 
             this.main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.main.Controls.Add(this.ErrorPanel);
             this.main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.main.Location = new System.Drawing.Point(200, 60);
             this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(1064, 815);
+            this.main.Size = new System.Drawing.Size(1064, 715);
             this.main.TabIndex = 2;
+            // 
+            // ErrorPanel
+            // 
+            this.ErrorPanel.Location = new System.Drawing.Point(578, 612);
+            this.ErrorPanel.Name = "ErrorPanel";
+            this.ErrorPanel.Size = new System.Drawing.Size(483, 100);
+            this.ErrorPanel.TabIndex = 0;
+            this.ErrorPanel.Visible = false;
+            // 
+            // Error
+            // 
+            this.Error.Enabled = true;
+            this.Error.Interval = 10000;
+            this.Error.Tick += new System.EventHandler(this.Error_Tick);
             // 
             // Hauptmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1264, 875);
+            this.ClientSize = new System.Drawing.Size(1264, 775);
             this.Controls.Add(this.main);
             this.Controls.Add(this.topbar);
             this.Controls.Add(this.sidebar);
@@ -361,6 +405,7 @@
             this.topbar.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.main.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -383,6 +428,8 @@
         private FontAwesome.Sharp.IconButton topbarSettings;
         private System.Windows.Forms.Label sachname;
         private System.Windows.Forms.Label sachnr;
+        private System.Windows.Forms.Panel ErrorPanel;
+        private System.Windows.Forms.Timer Error;
     }
 }
 

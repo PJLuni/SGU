@@ -44,8 +44,6 @@ namespace Spritzgussunternehmen
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ButtonHighlightOn(sender);
-            main.Controls.Clear();
-            OpenForm(new Auftrag());
         }
         private void iconButton3_Click(object sender, EventArgs e)
         {
@@ -58,8 +56,6 @@ namespace Spritzgussunternehmen
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ButtonHighlightOn(sender);
-            main.Controls.Clear();
-            OpenForm(new Stammdaten());
         }
         private void iconButton6_Click(object sender, EventArgs e)
         {
@@ -165,6 +161,13 @@ namespace Spritzgussunternehmen
         private void LightsOff()
         {
             sidebarAuftrag.Enabled = false;
+        }
+
+        private void Error_Tick(object sender, EventArgs e)
+        {
+            ErrorPanel.Visible = false;
+            ErrorPanel.Controls.Clear();
+            Error.Stop();
         }
     }
 }
