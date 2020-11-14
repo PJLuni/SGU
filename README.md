@@ -1,2 +1,2 @@
-# SGU
-DOWNLOAD DIRECTORYS OR FILES VIA DOWNGIT
+#Wie lade ich einen gesamten Ordner herunter?
+Ordner können mit Hilfe von DownGit heruntergeladen werden.
